@@ -132,7 +132,7 @@
         <div class = 'cart-cont'>
         <div class = 'cart' x-show = 'cartDisplay'>
             <div>
-                <button @click = 'cartDisplay = false; heightDec()' class = 'btn'>Close cart</button>
+                <button @click = 'cartDisplay = false; heightDecr()' class = 'btn'>Close cart</button>
             </div>
 
             <table class = 'tbl'>
@@ -274,7 +274,7 @@
     function heightChange() {
         document.getElementById('ht').style.height = '25em';
             } 
-    function heightDec() {
+    function heightDecr() {
         document.getElementById('ht').style.height = '16em';
             }
 </script>

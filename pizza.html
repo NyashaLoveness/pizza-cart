@@ -123,7 +123,7 @@
     <div class = 'head' id = 'ht'>
         <h1 class = 'header'>Perfect Pizza</h1>
         <div>
-            <button @click = 'cartDisplay = true; heightChange()' class = 'btn1'>Show cart</button>
+            <button @click = 'cartDisplay = true; heightChange(); hideBtn()' class = 'btn1'>Show cart</button>
                 <strong x-show = 'itemsTot() > 0' class = 'span'>
                     <span x-text = 'itemsTot()'></span>
                 </strong>
@@ -277,6 +277,9 @@
     function heightDec() {
         document.getElementById('ht').style.height = '16em';
             }
+    function hideBtn () {
+        document.getElementById('btn1').style.visibility = 'hidden';
+    }
 </script>
 
 </body>
